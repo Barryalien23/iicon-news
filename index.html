@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iicon news publisher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout: single readable column, brand header, three anchored sections (about / terms / privacy) */
+:root {
+  --bg: #f5f6fb;
+  --surface: #ffffff;
+  --fg: #141a33;
+  --muted: #5a6180;
+  --line: #dde0ee;
+  --accent: #213bff;
+  --display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --body: "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b0f22; --surface: #121835; --fg: #e8eaf6; --muted: #9aa1c2; --line: #252c52; --accent: #6f83ff;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b0f22; --surface: #121835; --fg: #e8eaf6; --muted: #9aa1c2; --line: #252c52; --accent: #6f83ff;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font: 16px/1.65 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 64px;
+}
+.wrap { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+header { display: flex; flex-direction: column; gap: 12px; }
+.brand { font: 700 clamp(28px, 6vw, 40px)/1.1 var(--display); letter-spacing: -0.01em; text-transform: uppercase; text-wrap: balance; }
+.brand span { color: var(--accent); }
+.lede { color: var(--muted); max-width: 62ch; margin: 0; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 20px; font: 500 14px var(--body); }
+nav a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+nav a:hover, nav a:focus-visible { border-bottom-color: var(--accent); outline: none; }
+section { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 28px clamp(18px, 4vw, 32px); display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+h2 { font: 600 20px/1.25 var(--display); margin: 0; text-transform: uppercase; letter-spacing: 0.02em; }
+h3 { font: 600 16px/1.3 var(--body); margin: 8px 0 0; }
+p, ul { margin: 0; max-width: 65ch; }
+ul { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+.meta { font: 400 13px var(--mono); color: var(--muted); }
+a { color: var(--accent); }
+code { font: 400 14px var(--mono); }
+footer { color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">iicon<span>_</span>news</div>
+    <p class="lede">Short videos about 3D printers, CNC machines, lasers, 3D scanners and plastic recycling. Published on TikTok as <a href="https://www.tiktok.com/@iicon_news">@iicon_news</a> and on YouTube as <a href="https://www.youtube.com/@iicon_neews">@iicon_neews</a>.</p>
+    <nav aria-label="Sections">
+      <a href="./">About the app</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
+  <section id="about">
+    <h2>About the app</h2>
+    <p><strong>iicon news publisher</strong> is a private desktop tool used only by the iicon_news creator. It runs on the creator's own computer and is not offered to other users.</p>
+    <ul>
+      <li>The creator signs in with TikTok (Login Kit) to connect the iicon_news account.</li>
+      <li>The tool uploads finished videos made by iicon_news to that account through the Content Posting API, with the caption, privacy level and interaction settings the creator chooses before each post.</li>
+      <li>The tool reads the account's profile, follower count and the list of its own videos with view, like and comment counts (Display API) so the creator can see how each video performs.</li>
+    </ul>
+    <p>The tool never posts to other people's accounts, never posts without the creator's action, and does not collect data about viewers.</p>
+  </section>
+  <footer>© 2026 iicon_news</footer>
+</div>
+</body>
+</html>
