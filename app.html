@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iicon news publisher — TikTok publisher app by iicon_news</title>
+<meta name="description" content="The desktop app iicon_news uses to send finished videos to TikTok drafts and follow their statistics.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:title" content="iicon news publisher — TikTok publisher app by iicon_news">
+<meta property="og:description" content="The desktop app iicon_news uses to send finished videos to TikTok drafts and follow their statistics.">
+<meta property="og:image" content="https://barryalien23.github.io/iicon-news/img/logo-512.png">
+<meta name="theme-color" content="#070b1f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html"><img src="img/logo-512.png" alt="" width="36" height="36">iicon_news</a>
+<nav class="site-nav" aria-label="Main"><a href="index.html">Home</a><a href="index.html#videos">Videos</a><a href="app.html" aria-current="page">Publisher app</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+</div></header>
+<main class="wrap">
+
+<section>
+  <h1>iicon news publisher</h1>
+  <p class="lede">The desktop app the iicon_news team uses to send finished videos to TikTok and to follow how the account's videos perform.
+  It connects to TikTok with the official TikTok for Developers APIs (Login Kit, Display API and Content Posting API).</p>
+  <p class="muted">The app is used for the iicon_news TikTok account. It is not sold or offered as a public service.</p>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-text"><h3>Sign in with TikTok</h3>
+        <p class="muted">The creator clicks “Continue with TikTok” and approves access on TikTok's own page (Login Kit).
+        The app then shows the account's name, avatar and statistics: followers, following, likes and number of videos.</p></div>
+      <img class="shot" src="img/shot-account.jpg" alt="Account page of iicon news publisher with TikTok profile and statistics" loading="lazy">
+    </div>
+    <div class="step">
+      <div class="step-text"><h3>See how videos perform</h3>
+        <p class="muted">The Videos page lists the account's public TikTok videos with views, likes, comments and shares,
+        so the creator can compare videos and plan the next ones.</p></div>
+      <img class="shot" src="img/shot-videos.jpg" alt="Videos page with views, likes, comments and shares of each TikTok video" loading="lazy">
+    </div>
+    <div class="step">
+      <div class="step-text"><h3>Send a finished video to TikTok drafts</h3>
+        <p class="muted">The creator picks a finished video. The app shows the caption prepared for TikTok with a copy button,
+        then uploads the video to TikTok as a draft (Upload to TikTok). Nothing is posted to the profile by the app.</p></div>
+      <img class="shot" src="img/shot-drafts.jpg" alt="Send to drafts page with video preview, TikTok caption and the Send to TikTok drafts button" loading="lazy">
+    </div>
+    <div class="step">
+      <div class="step-text"><h3>Finish and post in the TikTok app</h3>
+        <p class="muted">TikTok sends a notification to the creator's inbox. The creator opens the draft in the TikTok app,
+        pastes the caption, chooses the cover, marks AI-generated content, chooses who can view the video and posts it.</p></div>
+      <div class="card"><p>The final decision to post is always made by the creator inside the TikTok app.
+      The app never posts, edits or deletes videos on the profile and never posts to other accounts.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>TikTok permissions and why the app needs them</h2>
+  <div class="table-wrap"><table>
+    <tr><th>Product / scope</th><th>What the app does with it</th></tr>
+    <tr><td>Login Kit · <code>user.info.basic</code></td><td>Signs the creator in and shows the account name and avatar.</td></tr>
+    <tr><td><code>user.info.profile</code></td><td>Shows the profile link, bio and verification status on the Account page.</td></tr>
+    <tr><td><code>user.info.stats</code></td><td>Shows follower, following, like and video counts.</td></tr>
+    <tr><td><code>video.list</code></td><td>Lists the account's public videos with views, likes, comments and shares.</td></tr>
+    <tr><td>Content Posting API · <code>video.upload</code></td><td>Uploads a finished video to the creator's TikTok drafts. The creator finishes and posts it in TikTok.</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>Data and security</h2>
+  <div class="grid">
+    <div class="card"><h3>Runs on the creator's computer</h3><p>The app is a desktop program. Tokens and statistics stay on that computer and are sent only to TikTok's API.</p></div>
+    <div class="card"><h3>Only your own account</h3><p>The app reads data about the connected account only. It does not collect data about viewers or other users.</p></div>
+    <div class="card"><h3>Disconnect any time</h3><p>Use “Disconnect” in the app or remove access in TikTok: Settings and privacy → Security and permissions → Apps and services permissions.</p></div>
+  </div>
+  <p class="muted">Details: <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>. Questions: <a href="contact.html">Contact</a>.</p>
+</section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<span>© 2026 iicon_news · maker tech news</span>
+<nav aria-label="Footer"><a href="app.html">Publisher app</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+</div></footer>
+</body>
+</html>

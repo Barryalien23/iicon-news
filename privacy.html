@@ -3,95 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy · iicon news publisher</title>
+<title>Privacy Policy — iicon news publisher</title>
+<meta name="description" content="Privacy Policy for the iicon news publisher app.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:title" content="Privacy Policy — iicon news publisher">
+<meta property="og:description" content="Privacy Policy for the iicon news publisher app.">
+<meta property="og:image" content="https://barryalien23.github.io/iicon-news/img/logo-512.png">
+<meta name="theme-color" content="#070b1f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
-<style>
-/* Layout: single readable column, brand header, three anchored sections (about / terms / privacy) */
-:root {
-  --bg: #f5f6fb;
-  --surface: #ffffff;
-  --fg: #141a33;
-  --muted: #5a6180;
-  --line: #dde0ee;
-  --accent: #213bff;
-  --display: "Unbounded", "Arial Black", system-ui, sans-serif;
-  --body: "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0b0f22; --surface: #121835; --fg: #e8eaf6; --muted: #9aa1c2; --line: #252c52; --accent: #6f83ff;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0b0f22; --surface: #121835; --fg: #e8eaf6; --muted: #9aa1c2; --line: #252c52; --accent: #6f83ff;
-  color-scheme: dark;
-}
-* { box-sizing: border-box; }
-body {
-  background: var(--bg); color: var(--fg);
-  font: 16px/1.65 var(--body);
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-block: 40px 64px;
-}
-.wrap { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
-header { display: flex; flex-direction: column; gap: 12px; }
-.brand { font: 700 clamp(28px, 6vw, 40px)/1.1 var(--display); letter-spacing: -0.01em; text-transform: uppercase; text-wrap: balance; }
-.brand span { color: var(--accent); }
-.lede { color: var(--muted); max-width: 62ch; margin: 0; }
-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; font: 500 14px var(--body); }
-nav a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
-nav a:hover, nav a:focus-visible { border-bottom-color: var(--accent); outline: none; }
-section { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 28px clamp(18px, 4vw, 32px); display: flex; flex-direction: column; gap: 14px; min-width: 0; }
-h2 { font: 600 20px/1.25 var(--display); margin: 0; text-transform: uppercase; letter-spacing: 0.02em; }
-h3 { font: 600 16px/1.3 var(--body); margin: 8px 0 0; }
-p, ul { margin: 0; max-width: 65ch; }
-ul { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
-.meta { font: 400 13px var(--mono); color: var(--muted); }
-a { color: var(--accent); }
-code { font: 400 14px var(--mono); }
-footer { color: var(--muted); font-size: 14px; }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="brand">iicon<span>_</span>news</div>
-    <p class="lede">Short videos about 3D printers, CNC machines, lasers, 3D scanners and plastic recycling. Published on TikTok as <a href="https://www.tiktok.com/@iicon_news">@iicon_news</a> and on YouTube as <a href="https://www.youtube.com/@iicon_neews">@iicon_neews</a>.</p>
-    <nav aria-label="Sections">
-      <a href="./">About the app</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
-  </header>
-  <section id="privacy">
-    <h2>Privacy Policy</h2>
-    <p class="meta">Effective date: 19 October 2026</p>
-    <h3>Data we receive from TikTok</h3>
-    <ul>
-      <li>Basic profile: open ID, display name, avatar, profile link, bio and verification status (<code>user.info.basic</code>, <code>user.info.profile</code>).</li>
-      <li>Account statistics: follower, following, like and video counts (<code>user.info.stats</code>).</li>
-      <li>The list of your own public videos with their view, like, comment and share counts (<code>video.list</code>).</li>
-      <li>Access and refresh tokens that let the tool upload and publish videos you choose (<code>video.upload</code>, <code>video.publish</code>).</li>
-    </ul>
-    <h3>How it is used</h3>
-    <p>Only to publish your videos and to show you statistics about your own account. The data is not sold, shared with third parties, used for advertising or used to train AI models.</p>
-    <h3>Where it is stored</h3>
-    <p>Tokens and statistics are stored only on the creator's own computer, in files readable only by that user account. Nothing is sent to any server other than TikTok's own API.</p>
-    <h3>How long it is kept</h3>
-    <p>Tokens are kept until you disconnect the app or they expire. Statistics are kept as local reports for the creator and can be deleted at any time.</p>
-    <h3>Your choices</h3>
-    <p>You can revoke access in the TikTok app at any time (Settings and privacy → Security and permissions → Apps and services permissions). After that, stored tokens stop working and are deleted from the computer.</p>
-    <h3>Children</h3>
-    <p>The tool is not meant for anyone under 18.</p>
-    <h3>Contact</h3>
-    <p>Questions about this policy: send a direct message to <a href="https://www.tiktok.com/@iicon_news">@iicon_news</a> on TikTok.</p>
-  </section>
-  <footer>© 2026 iicon_news</footer>
-</div>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html"><img src="img/logo-512.png" alt="" width="36" height="36">iicon_news</a>
+<nav class="site-nav" aria-label="Main"><a href="index.html">Home</a><a href="index.html#videos">Videos</a><a href="app.html">Publisher app</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="privacy.html" aria-current="page">Privacy</a></nav>
+</div></header>
+<main class="wrap">
+
+<section class="doc">
+  <h1>Privacy Policy</h1>
+  <p class="muted">iicon news publisher · last updated 26 October 2026</p>
+  <h2>Data we receive from TikTok</h2>
+  <ul>
+    <li>Basic profile: open ID, display name, avatar, profile link, bio and verification status (<code>user.info.basic</code>, <code>user.info.profile</code>).</li>
+    <li>Account statistics: follower, following, like and video counts (<code>user.info.stats</code>).</li>
+    <li>The list of the account's own public videos with their view, like, comment and share counts (<code>video.list</code>).</li>
+    <li>Access and refresh tokens that let the app upload videos you choose to your TikTok drafts (<code>video.upload</code>).</li>
+  </ul>
+  <h2>How it is used</h2>
+  <p>Only to show you statistics about your own account and to upload the videos you choose to your drafts.
+  The data is not sold, not shared with third parties, not used for advertising and not used to train AI models.</p>
+  <h2>Where it is stored</h2>
+  <p>Tokens and statistics are stored only on the computer where the app runs, in files readable only by that user account.
+  Nothing is sent to any server other than TikTok's own API.</p>
+  <h2>How long it is kept</h2>
+  <p>Tokens are kept until you disconnect the app or they expire. Statistics are shown live and are not kept as a separate database;
+  a local log of uploads (time, file name and TikTok's upload status) is kept for the creator and can be deleted at any time.</p>
+  <h2>Your choices</h2>
+  <p>You can disconnect at any time with “Disconnect” in the app or in TikTok: Settings and privacy → Security and permissions → Apps and services permissions.
+  After that the stored tokens stop working and are deleted from the computer.</p>
+  <h2>Children</h2>
+  <p>The app is not meant for anyone under 18.</p>
+  <h2>Contact</h2>
+  <p>Questions about this policy: see <a href="contact.html">Contact</a>.</p>
+</section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<span>© 2026 iicon_news · maker tech news</span>
+<nav aria-label="Footer"><a href="app.html">Publisher app</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+</div></footer>
 </body>
 </html>

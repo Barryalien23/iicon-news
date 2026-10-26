@@ -3,82 +3,72 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>iicon news publisher</title>
+<title>iicon_news — maker tech in 60 seconds</title>
+<meta name="description" content="Short videos about 3D printers, CNC machines, lasers, 3D scanners and plastic recycling.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:title" content="iicon_news — maker tech in 60 seconds">
+<meta property="og:description" content="Short videos about 3D printers, CNC machines, lasers, 3D scanners and plastic recycling.">
+<meta property="og:image" content="https://barryalien23.github.io/iicon-news/img/logo-512.png">
+<meta name="theme-color" content="#070b1f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
-<style>
-/* Layout: single readable column, brand header, three anchored sections (about / terms / privacy) */
-:root {
-  --bg: #f5f6fb;
-  --surface: #ffffff;
-  --fg: #141a33;
-  --muted: #5a6180;
-  --line: #dde0ee;
-  --accent: #213bff;
-  --display: "Unbounded", "Arial Black", system-ui, sans-serif;
-  --body: "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0b0f22; --surface: #121835; --fg: #e8eaf6; --muted: #9aa1c2; --line: #252c52; --accent: #6f83ff;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0b0f22; --surface: #121835; --fg: #e8eaf6; --muted: #9aa1c2; --line: #252c52; --accent: #6f83ff;
-  color-scheme: dark;
-}
-* { box-sizing: border-box; }
-body {
-  background: var(--bg); color: var(--fg);
-  font: 16px/1.65 var(--body);
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-block: 40px 64px;
-}
-.wrap { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
-header { display: flex; flex-direction: column; gap: 12px; }
-.brand { font: 700 clamp(28px, 6vw, 40px)/1.1 var(--display); letter-spacing: -0.01em; text-transform: uppercase; text-wrap: balance; }
-.brand span { color: var(--accent); }
-.lede { color: var(--muted); max-width: 62ch; margin: 0; }
-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; font: 500 14px var(--body); }
-nav a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
-nav a:hover, nav a:focus-visible { border-bottom-color: var(--accent); outline: none; }
-section { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 28px clamp(18px, 4vw, 32px); display: flex; flex-direction: column; gap: 14px; min-width: 0; }
-h2 { font: 600 20px/1.25 var(--display); margin: 0; text-transform: uppercase; letter-spacing: 0.02em; }
-h3 { font: 600 16px/1.3 var(--body); margin: 8px 0 0; }
-p, ul { margin: 0; max-width: 65ch; }
-ul { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
-.meta { font: 400 13px var(--mono); color: var(--muted); }
-a { color: var(--accent); }
-code { font: 400 14px var(--mono); }
-footer { color: var(--muted); font-size: 14px; }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="brand">iicon<span>_</span>news</div>
-    <p class="lede">Short videos about 3D printers, CNC machines, lasers, 3D scanners and plastic recycling. Published on TikTok as <a href="https://www.tiktok.com/@iicon_news">@iicon_news</a> and on YouTube as <a href="https://www.youtube.com/@iicon_neews">@iicon_neews</a>.</p>
-    <nav aria-label="Sections">
-      <a href="./">About the app</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
-  </header>
-  <section id="about">
-    <h2>About the app</h2>
-    <p><strong>iicon news publisher</strong> is a private desktop tool used only by the iicon_news creator. It runs on the creator's own computer and is not offered to other users.</p>
-    <ul>
-      <li>The creator signs in with TikTok (Login Kit) to connect the iicon_news account.</li>
-      <li>The tool uploads finished videos made by iicon_news to that account through the Content Posting API, with the caption, privacy level and interaction settings the creator chooses before each post.</li>
-      <li>The tool reads the account's profile, follower count and the list of its own videos with view, like and comment counts (Display API) so the creator can see how each video performs.</li>
-    </ul>
-    <p>The tool never posts to other people's accounts, never posts without the creator's action, and does not collect data about viewers.</p>
-  </section>
-  <footer>© 2026 iicon_news</footer>
-</div>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html"><img src="img/logo-512.png" alt="" width="36" height="36">iicon_news</a>
+<nav class="site-nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="index.html#videos">Videos</a><a href="app.html">Publisher app</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+</div></header>
+<main class="wrap">
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Maker tech in 60&nbsp;seconds</h1>
+    <p class="lede">iicon_news is a Russian-language short-video channel about the machines that make things:
+    3D printers, CNC mills, laser cutters and engravers, 3D scanners and plastic recycling.
+    Every video takes one new tool or project and explains in about a minute what it does, how it works and what it costs.</p>
+    <div class="buttons"><a class="btn" href="https://www.youtube.com/@iicon_neews" target="_blank" rel="noopener">YouTube</a><a class="btn ghost" href="https://www.tiktok.com/@iicon_news" target="_blank" rel="noopener">TikTok</a><a class="btn ghost" href="https://www.instagram.com/iicon_news/" target="_blank" rel="noopener">Instagram</a><a class="btn ghost" href="https://t.me/iicon_news" target="_blank" rel="noopener">Telegram</a></div>
+  </div>
+  <img class="hero-logo" src="img/logo-512.png" alt="iicon_news logo" width="512" height="512">
+</section>
+
+<section>
+  <h2>What we cover</h2>
+  <div class="grid">
+    <div class="card"><h3>3D printing</h3><p>New FDM and resin printers, multicolor printing, materials and real parts people print at home and at work.</p></div>
+    <div class="card"><h3>CNC machines</h3><p>Desktop mills and routers that cut wood, aluminum, brass and steel, and what they can really do.</p></div>
+    <div class="card"><h3>Lasers</h3><p>Diode, CO2 and fiber lasers for engraving, cutting, cleaning and welding.</p></div>
+    <div class="card"><h3>3D scanning</h3><p>Handheld scanners and phone photogrammetry for copying and repairing parts.</p></div>
+    <div class="card"><h3>Recycling</h3><p>Machines that turn bottles and failed prints back into filament.</p></div>
+    <div class="card"><h3>AI for makers</h3><p>Tools that turn text or a photo into a 3D model or a ready part.</p></div>
+  </div>
+</section>
+
+<section id="videos">
+  <h2>Latest videos</h2>
+  <p class="muted">New short videos several times a week on YouTube, TikTok and Instagram. The videos are in Russian.</p>
+  <div class="videos"><a class="video" href="https://www.youtube.com/shorts/JngIQ4nu1DM" target="_blank" rel="noopener"><img src="img/v-JngIQ4nu1DM.jpg" alt="" loading="lazy" width="360" height="640"><span>Xhorse WM-100: type a phrase and a 5-axis desktop machine cuts the part from steel</span></a><a class="video" href="https://www.youtube.com/shorts/M4k82-7u65M" target="_blank" rel="noopener"><img src="img/v-M4k82-7u65M.jpg" alt="" loading="lazy" width="360" height="640"><span>UniFormation S10: a resin printer that washes and cures its own parts</span></a><a class="video" href="https://www.youtube.com/shorts/WuSTNUGZK58" target="_blank" rel="noopener"><img src="img/v-WuSTNUGZK58.jpg" alt="" loading="lazy" width="360" height="640"><span>Text-to-CAD: a free plugin turns one sentence into a printable part</span></a><a class="video" href="https://www.youtube.com/shorts/X9slYGXRmLw" target="_blank" rel="noopener"><img src="img/v-X9slYGXRmLw.jpg" alt="" loading="lazy" width="360" height="640"><span>Your phone is already a 3D scanner: free photogrammetry</span></a><a class="video" href="https://www.youtube.com/shorts/9n1d-kxBL30" target="_blank" rel="noopener"><img src="img/v-9n1d-kxBL30.jpg" alt="" loading="lazy" width="360" height="640"><span>Multicolor 3D printing without a quarter of the spool going to waste</span></a><a class="video" href="https://www.youtube.com/shorts/dMKP87IcEpo" target="_blank" rel="noopener"><img src="img/v-dMKP87IcEpo.jpg" alt="" loading="lazy" width="360" height="640"><span>Formlabs Form Studio 1: parts thinner than a human hair</span></a><a class="video" href="https://www.youtube.com/shorts/vu9dJcK6fmQ" target="_blank" rel="noopener"><img src="img/v-vu9dJcK6fmQ.jpg" alt="" loading="lazy" width="360" height="640"><span>PETmachine turns plastic bottles into 3D printer filament</span></a><a class="video" href="https://www.youtube.com/shorts/GiRDuPsCGWo" target="_blank" rel="noopener"><img src="img/v-GiRDuPsCGWo.jpg" alt="" loading="lazy" width="360" height="640"><span>A solid brass owl milled on a desktop CNC machine</span></a></div>
+  <div class="buttons"><a class="btn ghost" href="https://www.youtube.com/@iicon_neews/shorts" target="_blank" rel="noopener">All videos on YouTube</a>
+  <a class="btn ghost" href="https://www.tiktok.com/@iicon_news" target="_blank" rel="noopener">All videos on TikTok</a></div>
+</section>
+
+<section>
+  <h2>How the videos are made</h2>
+  <div class="grid">
+    <div class="card"><h3>Research</h3><p>We follow manufacturers, Kickstarter launches and maker communities and pick tools with real footage and real prices.</p></div>
+    <div class="card"><h3>Script and voice</h3><p>A short script with facts and sources, voiced in Russian, with word-by-word subtitles.</p></div>
+    <div class="card"><h3>Editing</h3><p>Vertical 4K video built from the manufacturers' and creators' footage, credited in every description.</p></div>
+    <div class="card"><h3>Publishing</h3><p>The finished video goes to YouTube, Instagram and TikTok. For TikTok we use our own <a href="app.html">publisher app</a>.</p></div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<span>© 2026 iicon_news · maker tech news</span>
+<nav aria-label="Footer"><a href="app.html">Publisher app</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+</div></footer>
 </body>
 </html>
