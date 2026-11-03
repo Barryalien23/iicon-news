@@ -71,6 +71,8 @@ p { margin: 0; max-width: 68ch; }
 .step { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 32px; align-items: center; }
 .step-text { display: flex; flex-direction: column; gap: 10px; }
 .step-text h3::before { counter-increment: step; content: counter(step); display: inline-grid; place-items: center; width: 30px; height: 30px; margin-right: 10px; border-radius: 50%; background: var(--accent); font: 700 14px var(--display); }
+.steps.row { flex-flow: row wrap; gap: 20px; }
+.steps.row .step { grid-template-columns: 1fr; flex: 1 1 240px; align-items: start; }
 .shot { border-radius: 12px; border: 1px solid var(--line); box-shadow: 0 20px 60px #00000080; }
 
 /* tables */
@@ -84,6 +86,7 @@ code { font: 14px ui-monospace, Menlo, monospace; color: #c9d2ff; }
 /* legal pages */
 .doc { max-width: 760px; display: flex; flex-direction: column; gap: 16px; }
 .doc h2 { font-size: 20px; margin-top: 16px; }
+.doc h3 { font-size: 17px; margin-top: 4px; }
 .doc ul { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; max-width: 68ch; }
 
 /* footer */

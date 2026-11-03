@@ -28,7 +28,8 @@
   <h1>iicon news publisher</h1>
   <p class="lede">The desktop app the iicon_news team uses to send finished videos to TikTok and to follow how the account's videos perform.
   It connects to TikTok with the official TikTok for Developers APIs (Login Kit, Display API and Content Posting API).</p>
-  <p class="muted">The app is used for the iicon_news TikTok account. It is not sold or offered as a public service.</p>
+  <p class="muted">The app is used for the iicon_news TikTok account. It is not sold or offered as a public service.
+  The same team also publishes to Pinterest through the official Pinterest API — see <a href="#pinterest">Pinterest</a> below.</p>
 </section>
 
 <section>
@@ -82,6 +83,37 @@
     <div class="card"><h3>Disconnect any time</h3><p>Use “Disconnect” in the app or remove access in TikTok: Settings and privacy → Security and permissions → Apps and services permissions.</p></div>
   </div>
   <p class="muted">Details: <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>. Questions: <a href="contact.html">Contact</a>.</p>
+</section>
+
+<section id="pinterest">
+  <h2>Pinterest</h2>
+  <p class="lede">iicon_news also shares its finished videos on Pinterest as video Pins, so people searching for 3D printing,
+  CNC and maker ideas can find them. Publishing runs in the team's private web dashboard (iicon studio), which connects
+  to the iicon_news Pinterest business account through the official Pinterest API v5.</p>
+  <div class="steps row">
+    <div class="step">
+      <div class="step-text"><h3>Connect with Pinterest</h3>
+        <p class="muted">The creator clicks “Connect Pinterest” in the dashboard and approves access on Pinterest's own page (OAuth 2.0).
+        The app never asks for the Pinterest password and never uses session cookies.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-text"><h3>Schedule a video Pin</h3>
+        <p class="muted">For each finished video the creator chooses a board and checks the title, description, link and cover.
+        At the scheduled time the dashboard uploads the video and creates the Pin on the creator's own board.</p></div>
+    </div>
+    <div class="step">
+      <div class="step-text"><h3>See how Pins perform</h3>
+        <p class="muted">The dashboard shows impressions, saves, outbound clicks and video views of the account's own Pins
+        next to the same video's results on YouTube and Instagram.</p></div>
+    </div>
+  </div>
+  <div class="card"><p>The app works only with the iicon_news Pinterest account. It does not read other people's Pins or boards,
+  does not follow, save, comment or message on anyone's behalf, and is not offered to other users.</p></div>
+  <h3>Pinterest permissions</h3>
+  <div class="table-wrap"><table>
+    <tr><th>Scope</th><th>What the app does with it</th></tr>
+    <tr><td><code>user_accounts:read</code></td><td>Shows the connected account name and avatar and confirms which account is connected.</td></tr><tr><td><code>boards:read</code></td><td>Lists the account's own boards so the creator can choose where a Pin goes.</td></tr><tr><td><code>boards:write</code></td><td>Creates a board for a new topic when the creator asks for it.</td></tr><tr><td><code>pins:read</code></td><td>Shows the account's own Pins and their analytics: impressions, saves, outbound clicks and video views.</td></tr><tr><td><code>pins:write</code></td><td>Creates a video Pin from a finished video at the time the creator scheduled.</td></tr>
+  </table></div>
 </section>
 
 </main>
